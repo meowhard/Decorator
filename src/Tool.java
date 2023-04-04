@@ -6,4 +6,16 @@ public abstract class Tool implements Workable{
     }
 
     public Tool() {}
+
+    @Override
+    public void work() {
+        if (workable != null) {
+            System.out.println(workable.getString());
+            workable.work();
+        }
+    }
+
+    public String getString() {
+        return null;
+    }
 }

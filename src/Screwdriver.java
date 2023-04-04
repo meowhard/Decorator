@@ -6,10 +6,7 @@ public class Screwdriver extends Tool{
     public Screwdriver() {}
 
     @Override
-    public void work() {
-        System.out.println("кручу");
-        if (workable != null) {
-            workable.work();
-        }
+    public String getString() {
+        return "кручу";
     }
 }
